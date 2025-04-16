@@ -1,0 +1,3 @@
+What is smtp?
+Smtp is know has simple mail transfer protocol it is used for sending  emails
+we use it to send email from our device to an email server.

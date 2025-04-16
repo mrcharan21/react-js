@@ -1,0 +1,15 @@
+what is website ?
+ Def : website is known as collection of interconnected webpages.
+ types of website:
+  a) static website
+         i.Content will be same for everyuser
+         ii.We cannot change the Content
+         iii.It will take more reloading time
+         iv.Most of the static website are  multipage app
+
+  b) dynamic website
+
+        i.Content will be different for everyuser
+        ii.We can change the Content
+        iii.It will take less time for reloading
+        iv.dynamic websites are singel page app.

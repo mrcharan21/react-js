@@ -1,0 +1,3 @@
+What is POP?
+POP is known has post office protocol this is used for receiving emails from server to our devices
+it works like downloding email and it delets it from the server 

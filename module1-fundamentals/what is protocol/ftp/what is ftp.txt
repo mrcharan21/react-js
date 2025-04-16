@@ -1,0 +1,4 @@
+What is ftp?
+ftp is know has File transfer protocol
+it works and used for transfering files between computer over the internet
+and this is not secured 

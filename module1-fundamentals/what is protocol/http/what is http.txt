@@ -1,0 +1,3 @@
+what is http?
+Hypertext transfer protocol this is used for loading webpages.
+it will send data between our browser and a website server.And this also not a secured protocol.

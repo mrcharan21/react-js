@@ -1,0 +1,5 @@
+what is mime?
+mime:Multipurpose internet mail extensions
+
+This is used for sharing or sending images ,videos,audio through email.
+example: When we attach the a photo an email MIME transfer it for transfer the file.

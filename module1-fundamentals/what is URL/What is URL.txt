@@ -1,0 +1,4 @@
+What is URL?
+URL is know as Uniform resouce locator 
+def:A URL is address like we type in the browser to find a website like www.Tops.com and it shows us to 
+where to go on the internet.

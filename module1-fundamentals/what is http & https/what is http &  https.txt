@@ -1,0 +1,7 @@
+What is http and https?
+http is known has hypertext Transfer Protocol it Transfer our url data between browser and a web server 
+and it will be sent in plain text so it can be read by hackers
+and 
+Https is know has hypertext Transfer Protocol Secure it is a Secure version it uses encryption to protect
+the data so it cannot read by hackers because it has a secured like it converts the plain text to byte code.
+

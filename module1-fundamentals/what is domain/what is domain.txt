@@ -1,0 +1,10 @@
+what is Domain?
+A Domain is know has a name of a website like Tops.com , It is a part of a URL that has a 
+separate place on the internet.
+
+Types of Domain 
+1.Website Domain:when we give a address to a browser it gives us to  access a website.
+2.Email Domain: This is a part of email address that we use after the "@" Symbol.
+
+    How Domain works
+        When we give a url into the browser,It sends a request to the Domain name system.

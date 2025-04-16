@@ -1,0 +1,7 @@
+What is localhost and localhost IP?
+Def:localhost is a hostname, this localhost is also called has my computer like The computer i am working on
+    It is used to test and see the websites locally before making live on the internet
+Example : http://localhost 
+
+Localhost IP:localhost IP know has localhost internet protocol like 127.10.1
+its work like when we give a localhost ip it checks it and it send the request back to our computer and run it.

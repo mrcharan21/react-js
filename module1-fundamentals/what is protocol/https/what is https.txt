@@ -1,0 +1,3 @@
+What is https?
+Https is know has hypertext Transfer Protocol Secure it is a Secure version it uses encryption to protect
+the data so it cannot read by hackers because it has a secured like it converts the plain text to byte code.
