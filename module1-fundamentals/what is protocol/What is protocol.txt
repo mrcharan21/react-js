@@ -1,2 +1,0 @@
-What is protocol?
-A protocol is define has how the data is sent and recieved over the network like the internt.

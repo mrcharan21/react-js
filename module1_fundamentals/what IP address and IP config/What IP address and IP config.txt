@@ -1,0 +1,12 @@
+what is IP address and IP config?
+ IP address is know as Internet Protocol address it is a unqiue number like our postal address 
+ it is used for communication between devices and network.
+ like example : A post man gives a post to our address
+
+    Ip address works
+    When we give URl to browser it sends the request to DNS:Domain Name system and DNS Translates Domain
+    to IP address in number format i.e 192.365.4.111 and sends to server.
+
+Ip Configuration : IP config is a tool that is used for manage and it displays information about 
+that devices network Configuration.
+
