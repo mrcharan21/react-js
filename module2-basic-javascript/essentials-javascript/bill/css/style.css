@@ -1,0 +1,21 @@
+tr{
+    text-align: left;
+}
+#bill{
+    width: 100%;
+    height: auto;
+    margin: auto;
+   
+}
+#btn{
+    width: 100px;
+    height: 30px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+body{
+    background-color: #f2f2f2;
+}
