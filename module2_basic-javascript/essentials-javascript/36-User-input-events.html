@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <script>
+        // function minnu()
+        // {
+        //     var a = parseInt(prompt('Enter a value:'));
+        //     var b = parseInt(prompt('Enter a value:'));
+        //     c=a+b;
+            // console.log(c);  //this is on chrome  //This are the methods to run the programm
+            // document.write(c);//this is on webpage 
+        //    confirm(c);  // this two to at box 
+        //    alert(c);
+        // }
+    </script>
+
+<script>
+    function lehan()
+    {
+        var a = parseInt(document.getElementById("a").value);
+        var b = parseInt(document.getElementById("b").value);
+        var c = a+b;
+
+        document.getElementById("result").innerHTML="The addition of numbers is :"+c;
+    }
+</script>
+<p id="result"></p>
+<input type="text" id="a" placeholder="A values" />
+<br><br><br>
+<input type="text" id="b" placeholder="B values" />
+<br><br>
+    <!-- <button type="button" onclick="lehan()">Add here</button> -->
+    <!-- <button type="button" ondblclick="lehan()">Add here</button> -->
+     <!-- <button type="button" onkeyup="lehan()">Add here</button> -->
+      <button type="button" onclick="lehan()">hit</button>
+</body>
+</html>
