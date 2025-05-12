@@ -1,0 +1,307 @@
+<!-- alert -->
+ <!-- <script>
+    var a = 10;
+    var b = 20;
+    c=a+b;
+    alert(c);
+ </script> -->
+
+ <!-- <script>
+    let a = "charan";
+    let b = "minnu";
+    c=a+b;
+    alert(c)
+ </script> -->
+
+ <!-- <script>
+    const a = "charan";
+    alert(a)
+ </script> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Form with Alert</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+  <div class="container mt-5" style="max-width: 400px;">
+    <h3 class="text-center mb-4">Login</h3>
+    <form>
+      <div class="mb-3">
+        <label for="username" class="form-label">Username</label>
+        <input type="text" id="username" class="form-control" placeholder="Enter username" required>
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" id="password" class="form-control" placeholder="Enter password" required>
+      </div>
+      <button type="button" class="btn btn-primary w-100" onclick="login()">Login</button>
+    </form>
+  </div>
+
+  <script>
+    function login() {
+      let username = document.getElementById("username").value;
+      let password = document.getElementById("password").value;
+
+      if (username === "admin" && password === "1234") {
+        alert("Login successfull!");
+      } else {
+        alert("Invalid username or password.");
+      }
+    }
+  </script>
+
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login with Bootstrap Alert</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-5" style="max-width: 400px;">
+  <h3 class="text-center mb-4">Login</h3>
+
+  //Bootstrap Alert Box (hidden by default) 
+  <div id="alertBox" class="alert d-none" role="alert"></div>
+
+  <form>
+    <div class="mb-3">
+      <label for="username" class="form-label">Username</label>
+      <input type="text" id="username" class="form-control" placeholder="Enter username" required>
+    </div>
+    <div class="mb-3">
+      <label for="password" class="form-label">Password</label>
+      <input type="password" id="password" class="form-control" placeholder="Enter password" required>
+    </div>
+    <button type="button" class="btn btn-primary w-100" onclick="login()">Login</button>
+  </form>
+</div>
+
+<script>
+  function login() {
+    const username = document.getElementById("username").value.trim();
+    const password = document.getElementById("password").value.trim();
+    const alertBox = document.getElementById("alertBox");
+
+    if (username === "admin" && password === "1234") {
+      alertBox.className = "alert alert-success"; // Bootstrap green alert
+      alertBox.textContent = "Login successful!";
+    } else {
+      alertBox.className = "alert alert-danger"; // Bootstrap red alert
+      alertBox.textContent = "Invalid username or password.";
+    }
+
+    alertBox.classList.remove("d-none"); // Show the alert
+  }
+</script>
+
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Basic Alert Example</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-5 text-center">
+  <h2>Click to Show Alert</h2>
+  <button class="btn btn-primary" onclick="showAlert()">Show Message</button>
+
+  //Alert box (hidden initially)
+  <div id="alertBox" class="alert alert-info mt-4 d-none" role="alert">
+    Hello! This is a basic Bootstrap alert.
+  </div>
+</div>
+
+<script>
+  function showAlert() {
+    document.getElementById("alertBox").classList.remove("d-none");
+  }
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> -->
+<!-- 
+ -->    
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="askconfirm()">Delete here</button>
+
+    <script>
+        function askconfirm()
+        {
+            const charan = confirm("do u want to delete ?");// confirm box  we can use var,let and const
+            if(charan){
+                alert(" successfully deleted");
+            }
+            else{
+                alert("not deleted");
+            }
+        }
+    </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #234f7a;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <button  type="button" onclick="charan()">Go to google</button>
+
+    <script>
+        function charan()
+        {
+            if(confirm("do u want to go google?"))
+        {
+            window.location.href="https://www.google.com";
+        }
+        else{
+            alert("not going to google");
+        }
+        }
+    </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" onclick="charan()">Logout</button>
+
+    <script>
+        function charan()
+        {
+            if (confirm("Are you sure want to logout?"))
+        {
+            alert("Logout successful");
+        }
+        else{
+            alert("Logout cancelled");
+        }
+
+        }
+
+    </script>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js" integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D" crossorigin="anonymous"></script>
+</head>
+<body>
+ <script>
+function checkEvenOdd()
+{
+    const num = parseInt(document.getElementById("num").value, 10);
+
+    if (isNaN(num)) {
+        Swal.fire({
+            title: "Invalid input!",
+            text: "Please enter a valid number.",
+            icon: "error"
+        });
+        return;
+    }
+
+    if (num % 2 === 0) {
+        Swal.fire({
+            title: "Number is even!",
+            text: "You clicked the button!",
+            icon: "success"
+        });
+    } else {
+        Swal.fire({
+            title: "Number is odd!",
+            text: "You clicked the button!",
+            icon: "success"
+        });
+    }
+}
+  
+ </script>
+
+  <div class="container mt-5" style="width: 400px; margin: auto;">
+    <form class="text-center" style="background-color: #f8f9fa; padding: 20px; border-radius: 5px; margin-top: 50px;">
+      <div>
+        <input type="text" id="num" placeholder="Enter a number*" />
+        <button type="button" class="btn btn-primary" onclick="checkEvenOdd()">Check Even or Odd</button>
+      </div>
+      </div>
+    </form>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html> -->
+
+
+<script>
+// if condition
+// if(condition)
+// {
+//     // code to be executed if condition is true
+// }
+
+let a = 20;
+
+if(a >=18)
+{
+    prompt("i am major");
+
+}
+else{
+    prompt("i am minor");
+}
+
+</script>
