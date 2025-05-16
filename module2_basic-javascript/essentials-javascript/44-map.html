@@ -1,0 +1,34 @@
+<script>
+    //map: map is a array function that can be used to work as a loop but map each values of array an returns as list.
+
+    /*syntax:
+    map(callback, array);
+
+    array.map((value, index) => {
+        return newValue;
+    });
+
+
+    callback : callback is a function that will be called for each element of array.
+    array: is an array of elements
+    return: new array with the results of calling callback on every element in array.
+
+    */
+   
+    // let employee = ["charan","vasu","minnu","lehan","vijay"];
+    // let salary = employee.map(emp => emp + " :" + 50000);
+    // console.log(salary);
+
+    // let employee = ["charan","vasu","minnu","lehan","vijay"];
+
+    // employee.map(display);
+    // function display(emp){
+    //     console.log(emp);
+    // }
+
+    let category = ["electronics","shoes","shirts"];
+    let item = ["laptop","puma","netplay"];
+    let product = category.map(cat => ({category: cat, items: item.filter(it => it.includes(cat))}));
+
+    console.log(product);
+</script>

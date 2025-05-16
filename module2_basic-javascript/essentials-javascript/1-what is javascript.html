@@ -156,8 +156,9 @@ javascript statements provides conditional and looping statements
 using condition we check true and false
 using loop we check number of iteration repeated again and again there we use looping
 javascript provides some conditional statements
-
+                    <!-- This are the conditional statements -->
 1) conditional statements
+
      a) if statement
 
 syntax:
@@ -168,14 +169,89 @@ syntax:
 
 
      b) if else statement
+syntax:
+          if(condition)
+          {
+               statements;
+          }else{
+               statements;
+          }
+
      c) nested if statement
+syntax:
+          if(condition){
+               if(condition){
+                    statements;
+               }
+          }
+          else{
+               statements;
+          }
      d) if else if statement
+syntax:
+          if(condition)
+          {
+               statements;
+          }
+               elseif(condition)
+               {
+               statements;
+               }    
+          else
+          {
+               statements;
+          }
+
      f) switch case statement
+syntax:
+     switch(condition)
+          {
+               case '1':
+               statements;
+               break;
+
+               case '2':
+               statements;
+               break;
+
+               case '3':
+               statements;
+               break;
+
+               default;
+               statements;
+               break;
+          }
+
+
+          <!-- This are the looping statements -->
 
 2) looping statements
      a) for loop
-     b) while loop
+syntax:
+     for(initialisation,condition,increment/decrement)
+     {
+     statements;
+     }
+
+
+     b) while loop 
+ syntax:
+     while(condition)
+     {
+        statements;
+        incremnet/decremenet;
+     }
+
      c) do while loop
+syntax:
+     let i =0;
+     do{
+          console.log(i);
+          i++;
+     }
+     while(condition); // condition will be checked after each iteration
+    
      d) for in loop
      e) for of loop
      f) for each loop
