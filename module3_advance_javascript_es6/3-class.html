@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        #p1{
+            width: 100%;
+            padding: 5px;
+            margin: 10px;
+        }
+         #p2{
+            width: 100%;
+            padding: 5px;
+            margin: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <p id="p1">What is class?</p>
+        <p id="p2">A class is a blueprint of an object
+         <br>   or <br>
+        A class is a collection of properties and methods that define the behaviour of an object
+        <br> or<br>
+        Class is a blueprint of an object that can be used to create multiple objects
+        </p>
+    </div>
+</body>
+<script>
+    class Car {
+        constructor(name,model){
+            this.name=name;
+            this.model=model;
+        }
+    }
+    let myObj=new Car("Benz",1989);
+    // console.log(myObj);
+    // console.log(myObj.name);
+    console.log(myObj.model)
+</script>
+</html>
