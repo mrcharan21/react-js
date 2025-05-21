@@ -1,0 +1,87 @@
+<script>
+    /*
+    What is object...
+    object is an instance of class
+    or 
+    object is called via new keyword of same name of class
+
+    An object is an examples of class
+    //example : chair , computer ,table 
+
+    */
+//    class A{
+//     constructor(chair)
+//     {
+//         this.chair=chair;
+//     }
+//    }
+//    var obj = new A("This chair is supereme company");
+//    console.log(obj);
+
+//    class Person{
+//     constructor(name,age){
+//         this.name=name;
+//         this.age=age;
+//     }
+//    }
+//    var ck = new Person("Charan",23);
+//    console.log(ck);
+
+
+// class Electroincs{
+//     constructor(phone,laptop,bluetooth,speaker){
+//         this.phone=phone;
+//         this.laptop=laptop;
+//         this.bluetooth=bluetooth;
+//         this.speaker=speaker;
+//     }
+// }
+// const ck = new Electroincs("Iphone","Dell","Boat","Noise");
+// console.log(ck);
+
+
+class Electroincs{
+    constructor(phone,laptop,bluetooth,speaker){
+        this.phone=phone;
+        this.laptop=laptop;
+        this.bluetooth=bluetooth;
+        this.speaker=speaker;
+    }
+    products(){
+        console.log(`My new ${this.phone} and i bought  ${this.laptop} and they gave ${this.bluetooth}and a  ${this.speaker}`)
+    }
+}
+const ck = new Electroincs("Iphone 15","Dell itel", "Boat" , "Noise");
+console.log(ck);
+
+ck.products();
+
+
+// class Electronics {
+//   constructor(phone, laptop, bluetooth, speaker) {
+//     this.phone = phone;
+//     this.laptop = laptop;
+//     this.bluetooth = bluetooth;
+//     this.speaker = speaker;
+//   }
+
+//   products() {
+//     console.log(`My new ${this.phone} and I bought ${this.laptop}, and they gave ${this.bluetooth} and a ${this.speaker}`);
+//   }
+// }
+
+// // Create an object
+// const ck = new Electronics("iPhone 15", "Dell iTel", "Boat", "Noise");
+
+// // Print object info
+// console.log(ck);
+
+// // Call method to display the message
+// ck.products();
+
+
+
+
+
+
+</script>

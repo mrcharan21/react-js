@@ -1,0 +1,137 @@
+<script>
+    /*
+    What is constructor
+    constructor is a same name of class
+    constructor automatically called whenever we create an object of class
+
+    */
+//    class A{
+//     constructor(carname,brand,model){
+//         this.carname=carname;
+//         this.brand=brand;
+//         this.model=model;
+//     }
+//    }
+//    var obj= new A("maruthi baleno","maruthi",2025);
+//    console.log(obj);
+
+//    class A{
+//     constructor(name)
+//     {
+//         this.name=name;
+//     }
+//    }
+//    var obj = new A("Charan")
+//    console.log(obj);
+
+// class Person{
+//     constructor(name,age){
+//         this.name=name;
+//         this.age=age;
+//     }
+//     charan(){
+//         console.log(`My name ${this.name} i am ${this.age} old`)
+//     }
+// }
+// const Person1= new Person("Charan", 25);
+// Person1.charan();
+
+
+// class Car{
+//     constructor(brand = "Benz" ,color = "Black"){
+//         this.brand=brand;
+//         this.color=color;
+//     }
+//     showCar(){
+//         console.log(`${this.brand} ${this.color}`)
+//     }
+// }
+// // const car1 = new Car("Toyota","white");
+// const car2 = new Car();
+
+// // car1.showCar();
+// car2.showCar();
+
+
+// class Car{
+//     constructor(brand = "Benz" ,color = "Black"){
+//         this.brand=brand;
+//         this.color=color;
+//     }
+//     showCar(){
+//         console.log(`${this.brand} ${this.color}`)
+//     }
+// }
+// const car1 = new Car("Toyota","white");
+
+// car1.showCar();
+
+
+// class Student{
+//     constructor(name){
+//         this.name=name;
+//     }
+//     greet(){
+//         console.log(`Hello, I am ${this.name}`);
+//     }
+// }
+// const s1 =  new Student("Charan");
+// const s2 = new Student("Aravind");
+// s1.greet();
+// s2.greet();
+
+// class Product{
+//     constructor({name , price}){
+//         this.name=name;
+//         this.price=price;
+//     }
+//     show(){
+//         alert(`product : ${this.name}, price: ${this.price}`);
+//     }
+// }
+// // const ck = new Product({name : "Laptop" , price:50000});
+
+// const productName = prompt("Enter a product name:")
+// const productPrice = prompt("Enter the price:")
+
+// const ck = new Product({name : productName, price: productPrice});
+
+// ck.show();
+
+// class Product{
+//     constructor(name , price){
+//         this.name=name;
+//         this.price=price;
+//     }
+//     show(){
+//         alert(`product : ${this.name}, price: ${this.price}`);
+//     }
+// }
+// // const ck = new Product({name : "Laptop" , price:50000});
+
+// const productName = prompt("Enter a product name:")
+// const productPrice = prompt("Enter the price:")
+
+// const ck = new Product(productName, productPrice);
+
+// ck.show();
+
+
+class Library {
+    constructor(books){
+        this.books=books;
+    }
+    listBooks(){
+        this.books.forEach((book, index) => {
+            console.log(`${index +1}. ${book}`);
+        });
+    }
+}
+const lib = new Library(["Harry potter","java", "javascript"]);
+lib.listBooks();
+
+
+
+
+
+</script>

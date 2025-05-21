@@ -1,0 +1,130 @@
+<script>
+//     class User {
+//   #password; // private field
+
+//   constructor(name, password) {
+//     this.name = name;
+//     this.#password = password;
+//   }
+
+//   checkPassword() {
+//     console.log(this.#password);
+//   }
+// }
+
+// const user1 = new User("John", "1234");
+// user1.checkPassword("1234"); // true
+// // console.log(user1.#password); // ❌ Error: private field
+// console.log(user1.name);
+// console.log(user1.#password);
+
+
+
+
+// class Animal {
+//   constructor(name) {
+//     this.name = name;
+//   }
+
+//   speak() {
+//     console.log(`${this.name} makes a sound.`);
+//   }
+// }
+
+// class Dog extends Animal {
+//   constructor(name, breed) {
+//     super(name); // calls the Animal constructor
+//     this.breed = breed;
+//   }
+
+//   call() {
+//     // super.speak(); // calls speak() from Animal
+//     console.log(`${this.name} barks.`); 
+//   }
+// }
+
+// const dog = new Dog("Rocky", "Labrador");
+// console.log(dog);
+// dog.call();
+// dog 
+
+
+// .speak();
+
+
+//Rocky makes a sound 
+//Rocky barks.
+
+// Syntax:
+
+// class ClassName {
+//   constructor(parameters) {
+//     //Initilize properties
+//     this.property1=value1;
+//     this.property2=value2;
+//   }
+//   methodName() {
+//     //code for method
+//   }
+// }
+// const objectName = new ClassName(arguments);
+
+
+// class Phone {
+//   constructor(brand,model) {
+
+//     this.brand = brand;
+//     this.model = model;
+//   }
+//   show()
+//   {
+//     console.log(`${this.brand} ${this.model}`)
+//   }
+// }
+// const charan = new Phone("Iphone", 15);
+// charan.show();
+
+
+// class Car{
+//   constructor(brand,model,year) {
+
+//     this.brand=brand;
+//     this.model=model;
+//     this.year=year;
+//   }
+//   displayInfo()
+//   {
+//     console.log(`Brand: ${this.brand}, Model: ${this.model}, Year: ${this.year}`)
+//   }
+// }
+// const myCar = new Car("Toyoto","Corolla",2020);
+// myCar.displayInfo();
+
+class Student {
+  constructor(name,birthyear) {
+    this.name=name;
+    this.birthyear=birthyear;
+  }
+  calculateAge(currentYear){
+    return currentYear - this.birthyear;
+  }
+}
+const Student1=new Student("Charan",2002);
+const age = Student1.calculateAge(2025);
+
+console.log(`${Student1.name} is ${age} years old`);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
