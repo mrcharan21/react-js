@@ -1,0 +1,72 @@
+<script>
+    /*
+    A Class inherits from a class, which itself inherits from another class.
+    */
+//    class A {
+//     constructor(name,age){
+//         this.name=name;
+//         this.age=age;
+//     }
+//    }
+//    class B extends A {
+//     constructor(name,age,address){
+//         super(name,age,address);
+//             this.address=address;
+        
+//     }
+//    }
+//    class C extends B{
+//     constructor(name,age,address,salary)
+//     {
+//         super(name,age,address);
+//         this.salary=salary;
+//     }
+//    }
+//    class D extends C{
+//     constructor(name,age,address,salary,department){
+//         super(name,age,address,salary)
+//         this.department=department;
+//     }
+//     showDetails(){
+// console.log(`My name is ${this.name}, I am ${this.age} years old, from ${this.address}, my salary is ${this.salary}, and I work in the ${this.department} department.`);    }
+//    }
+//    var obj = new D("charan",23,"hyd",30000,"IT")
+// //    console.log(obj);
+//    obj.showDetails();
+
+
+
+   class Tops{
+    constructor(student,course){
+        this.student=student;
+        this.course=course;
+    }
+   }
+   class Institute extends Tops{
+    constructor(student,course,project)
+    {
+        super(student,course,project);
+        this.project=project;
+    }
+   }
+   class Job extends Institute{
+    constructor(student,course,project,location)
+    {
+        super(student,course,project,location);
+        this.location=location;
+    }
+   }
+   class Fest extends Job{
+    constructor(student,course,project,location,department)
+    {
+        super(student,course,project,location,department);
+        this.department=department;
+    }
+    showDetails(){
+    console.log(`My name is ${this.student}, enrolled in the ${this.course} course, working on the ${this.project} project at ${this.location}, in the ${this.department} department.`);
+    }
+   }
+   const ck = new Fest("Charan", "React js", "Hrms", "Rajkot", "IT");
+   console.log(ck);
+   ck.showDetails();
+</script>

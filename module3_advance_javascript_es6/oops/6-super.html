@@ -1,0 +1,91 @@
+<script>
+    /*
+    super() : Super is a method i.e used to access a parent class properties inside of its child class
+    super() is used inside of inheritance of javascript.
+
+    or 
+
+    It is used to 
+    1.Call the constructor of the parent class
+    2.Access methods of the parent class inside the child class.
+
+    Where is super() used?
+    It is used inside a child class that is extending a parent class using extends.
+
+    Why use super()/
+    Because when you create a subclass,you must call super() before using "this" in the constructor.If you skip it,javascript will throw an error.
+
+
+    */
+
+
+    // class Car{
+    //     constructor(nm,year,model){
+    //         this.nm=nm;
+    //         this.year=year;
+    //         this.model=model;
+    //     }
+    // }
+    // class Garage extends Car{
+    //     constructor(nm,year,model,mechanic){
+    //         super(nm,year,model);
+    //         this.mechanic=mechanic;
+    //     }
+    // }
+    // const obj = new Garage("BMW",2025,"BMW 2022","Charan");
+    // console.log(obj);
+
+
+
+    // class Electronics{
+    //     constructor(mobile,laptop,speaker){
+    //         this.mobile=mobile;
+    //         this.laptop=laptop;
+    //         this.speaker=speaker;
+    //     }
+    // }
+    // class Product extends Electronics{
+    //     constructor(mobile,laptop,speaker,charger){
+    //         super(mobile,laptop,speaker);
+    //         this.charger=charger;
+    //     }
+    // }
+    // var ck = new Product("Iphone","Dell","Boat","Oneplus charger");
+    // console.log(ck);
+
+    // class Animal{
+    //     constructor(name){
+    //         this.name=name;
+    //     }
+    //     speak(){
+    //         console.log(`${this.name} makes a sound bhuu bhuu`);
+    //     }
+    // }
+    // class Dog extends Animal{
+    //     constructor(name,bread){
+    //         super(name); //sends name to parent class (Animal)
+    //         this.bread=bread;
+    //     }
+    //     showInfo() {
+    //         console.log(`Dog Name :${this.name}, Bread :${this.bread}`);
+    //     }
+    // }
+    // const dog = new Dog("Rocky" ,"Labrador");
+    // // dog.showInfo();
+    // // console.log(dog);
+    // dog.speak();
+
+//     class Vechile{
+//         charan(){
+//             console.log("This is a Parent class");
+//         }
+//     }
+//     class Car extends Vechile{
+//         charan() {
+//             super.charan();
+//             console.log("This is a child class using super()")
+//         }
+// }
+// const car = new Car();
+// car.charan();
+</script>

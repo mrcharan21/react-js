@@ -1,0 +1,93 @@
+<script>
+    // one parent class properties access via its child class i.e called singel inheritance.
+
+    // class A{
+    //     constructor(name){
+    //         this.name=name;
+    //     }
+    // }
+    // class B extends A{
+    //     constructor(name,age){
+    //         super(name,age);
+    //         this.age=age;
+    //     }
+    // }
+    // var obj = new A("Charan",23);
+    // console.log(obj);
+
+
+    // class Car{
+    //     constructor(brand) {
+    //         this.carname=brand;
+    //     }
+    //     present(){
+    //         return 'I have a'+this.carname;
+    //     }
+    // }
+    // class Model extends Car{
+    //     constructor(brand,mod){
+    //         super(brand);
+    //         this.model = mod;
+    //     }
+    //     show(){
+    //         return this.present() + ', it is a '+ this.model;
+    //     }
+    // }
+    // let mycar = new Model("Ford","Mustang");
+    // // console.log(mycar);
+    // mycar.show();
+    // // mycar.present();
+
+
+    // class Vechile{
+    //     constructor(type){
+    //         this.type=type;
+    //     }
+    //     showType(){
+    //         console.log(`This is a ${this.type}`);
+    //     }
+    // }
+    // class Car extends Vechile{
+    //     constructor(type,brand){
+    //         super(type);
+    //         this.brand=brand;
+    //     }
+    //     showDetails(){
+    //         console.log(`Brand: ${this.brand}`);
+    //     }
+    // }
+    // var myCar = new Car("Four-wheeler","Totota");
+    // myCar.showType();
+    // myCar.showDetails();
+    // console.log(myCar);
+
+
+    class Office{
+        constructor(student,age){
+            this.student=student;
+            this.age=age;
+        }
+       
+    }
+    class Tops extends Office{
+        constructor(student,age,place){
+            super(student,age);
+            this.place=place;
+        }
+        showPresent(){
+            console.log(`My name is ${this.student} and my age is ${this.age} I am from ${this.place}`);
+        }
+    }
+    const myOfc = new Tops("Charan", 23 ,"HYD");
+    myOfc.showPresent();
+    console.log(myOfc);
+
+
+
+
+
+
+
+
+
+</script>
