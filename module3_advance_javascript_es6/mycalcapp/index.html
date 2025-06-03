@@ -14,6 +14,9 @@
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" 
     integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>
+
+    <!-- js file -->
+     <script src="./Js/main.js"></script>
 </head>
 <body>
     <section>
@@ -25,62 +28,62 @@
             </tr>   
                 <tr>
                 <td>
-                    <button type="button" class="btn" id="sss">MC</button>
-                    <button type="button" class="btn" id="sss">MR</button>
-                    <button type="button" class="btn" id="sss">M+</button>
-                    <button type="button" class="btn" id="sss">M-</button>
-                    <button type="button" class="btn" id="sss">MS</button>
+                    <button type="button" class="btn" id="sss" onclick="memoryClear()">MC</button>
+                    <button type="button" class="btn" id="sss" onclick="memoryRecall()">MR</button>
+                    <button type="button" class="btn" id="sss" onclick="memoryAdd()">M+</button>
+                    <button type="button" class="btn" id="sss" onclick="memorySubtract()">M-</button>
+                    <button type="button" class="btn" id="sss" onclick="memorySave()">MS</button>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <button type="button" class="btn btn-md btn-light shadow" id="btn">%</button>
-                    <button type="button" class="btn btn-md btn-light shadow" id="btn">CE</button>
-                    <button type="button" class="btn btn-md btn-light shadow" id="btn">C</button>
-                    <button type="button" class="btn btn-md btn-light shadow" id="btn">&times;</button>
-                </td>
-            </tr>
-            
-            <tr>
-                <td>
-                    <button type="button" class="btn btn-md btn-light shadow" id="btn">1/x</button>
-                    <button type="button" class="btn btn-md btn-light shadow" id="btn">x<sup>2</sup></button>
-                    <button type="button" class="btn btn-md btn-light shadow" id="btn">2√x</button>
-                    <button type="button" class="btn btn-md btn-light shadow" id="btn">/</button>
+                    <button type="button" class="btn btn-md btn-light shadow" id="btn" onclick="percentage()">%</button>
+                    <button type="button" class="btn btn-md btn-light shadow" id="btn" onclick="clearEntry()">CE</button>
+                    <button type="button" class="btn btn-md btn-light shadow" id="btn" onclick="clearData()">C</button>
+                    <button type="button" class="btn btn-md btn-light shadow" id="btn" onclick="sliceValue()">&times;</button>
                 </td>
             </tr>
             
             <tr>
                 <td>
-                    <button type="button" class="btn btn-md btn-light shadow" id="btn">7</button>
-                    <button type="button" class="btn btn-md btn-light shadow" id="btn">8</button>
-                    <button type="button" class="btn btn-md btn-light shadow" id="btn">9</button>
-                    <button type="button" class="btn btn-md btn-light shadow" id="btn">x</button>
+                    <button type="button" class="btn btn-md btn-light shadow" id="btn" onclick="reciprocal()">1/x</button>
+                    <button type="button" class="btn btn-md btn-light shadow" id="btn" onclick="sq()">x<sup>2</sup></button>
+                    <button type="button" class="btn btn-md btn-light shadow" id="btn" onclick="squareRoot()">2√x</button>
+                    <button type="button" class="btn btn-md btn-light shadow" id="btn" value="/" onclick="return inputButton(this.value)">/</button>
                 </td>
             </tr>
             
             <tr>
                 <td>
-                    <button type="button" class="btn btn-md btn-light shadow" id="btn">4</button>
-                    <button type="button" class="btn btn-md btn-light shadow" id="btn">5</button>
-                    <button type="button" class="btn btn-md btn-light shadow" id="btn">6</button>
-                    <button type="button" class="btn btn-md btn-light shadow" id="btn">-</button>
+                    <button type="button" class="btn btn-md btn-light shadow" id="btn" value="7" onclick="return inputButton(this.value)">7</button>
+                    <button type="button" class="btn btn-md btn-light shadow" id="btn" value="8" onclick="return inputButton(this.value)">8</button>
+                    <button type="button" class="btn btn-md btn-light shadow" id="btn" value="9" onclick="return inputButton(this.value)">9</button>
+                    <button type="button" class="btn btn-md btn-light shadow" id="btn" value="*" onclick="return inputButton(this.value)">*</button>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <button type="button" class="btn btn-md btn-light shadow" id="btn" value="4" onclick="return inputButton(this.value)">4</button>
+                    <button type="button" class="btn btn-md btn-light shadow" id="btn" value="5" onclick="return inputButton(this.value)">5</button>
+                    <button type="button" class="btn btn-md btn-light shadow" id="btn" value="6" onclick="return inputButton(this.value)">6</button>
+                    <button type="button" class="btn btn-md btn-light shadow" id="btn" value="-" onclick="return inputButton(this.value)">-</button>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <button type="button" class="btn btn-md btn-light shadow" id="btn">1</button>
-                    <button type="button" class="btn btn-md btn-light shadow" id="btn">2</button>
-                    <button type="button" class="btn btn-md btn-light shadow" id="btn">3</button>
-                    <button type="button" class="btn btn-md btn-light shadow" id="btn">+</button>
+                    <button type="button" class="btn btn-md btn-light shadow" id="btn" value="1" onclick="return inputButton(this.value)">1</button>
+                    <button type="button" class="btn btn-md btn-light shadow" id="btn" value="2" onclick="return inputButton(this.value)">2</button>
+                    <button type="button" class="btn btn-md btn-light shadow" id="btn" value="3" onclick="return inputButton(this.value)">3</button>
+                    <button type="button" class="btn btn-md btn-light shadow" id="btn" value="+" onclick="return inputButton(this.value)">+</button>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <button type="button" class="btn btn-md btn-light shadow" id="btn">+/-</button>
-                    <button type="button" class="btn btn-md btn-light shadow" id="btn">0</button>
-                    <button type="button" class="btn btn-md btn-light shadow" id="btn">.</button>
-                    <button type="button" class="btn btn-md btn-primary text-white shadow" id="btn">=</button>
+                    <button type="button" class="btn btn-md btn-light shadow" id="btn" onclick="toggleSign()">+/-</button>
+                    <button type="button" class="btn btn-md btn-light shadow" id="btn" value="0" onclick="return inputButton(this.value)">0</button>
+                    <button type="button" class="btn btn-md btn-light shadow" id="btn" value="." onclick="return inputButton(this.value)">.</button>
+                    <button type="button" class="btn btn-md btn-primary text-white shadow" id="btn" onclick="finalResult()">=</button>
                 </td>
             </tr>
             </table>    

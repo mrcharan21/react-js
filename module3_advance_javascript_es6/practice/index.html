@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src='main.js'></script>
+    <style>
+      #company_list{
+        width: 50%;
+        height: 50px;
+        font-size: 20px;
+        margin: 20px auto;
+        text-align: center;
+        display: block;
+
+      }
+      table{
+        width: 30%;
+        height: auto;
+        text-align: center;
+        margin: 20px auto;  
+        
+      }
+      
+    </style>
+</head>
+<body>
+    <h1>company</h1>
+    <select name="company_list" id="company_list" onchange="loadEmployee()">
+        <option value="0">--Please select commpany to get employee list--</option>
+        <option value="1">Tops</option>
+        <option value="2">Google</option>
+        <option value="3">Hcl</option>
+        <option value="4">Microsoft</option>
+    </select>
+   <table border="1">
+        <thead>
+            <tr>
+                <th>Employee List</th>
+            </tr>
+        </thead>
+        <tbody id="employee_list">
+            <tr>
+                <td>Please select a company</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
