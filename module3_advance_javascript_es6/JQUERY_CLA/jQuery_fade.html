@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fading methods</title>
+         <!-- bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/gray.css" /></head>
+
+    <!-- jquery Cdn -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+    <script>
+        $(document).ready(function(){
+        $('#fadeInBtn').click(function(){
+            $('#fadeBox').fadeIn();
+        });
+
+        $('#fadeOutBtn').click(function(){
+            $('#fadeBox1').fadeOut();
+        });
+        // $("button").click(function(){
+        //     $("#div1").fadeToggle();
+        //     $("#div2").fadeToggle("slow");
+        //     $('#div3').fadeToggle(3000);
+        // });
+         $("button").click(function(){
+    $("#div1").fadeTo("slow", 0.15);
+    $("#div2").fadeTo("slow", 0.4);
+    $("#div3").fadeTo("slow", 0.7);
+  });
+    });
+    </script>
+    
+</head>
+<body>
+    <!-- jquery Fading methods
+    with jquery we can fade an element in and out of visibility
+
+    jquery has the following fade methods
+    1.fadeIn()
+    2.fadeOut()
+    3.fadeToggle()
+    4.fadeTo() -->
+
+    <!-- 1.jquery fadeIn method 
+    This method is used to fade in a hidden element.
+
+    syntax:
+    $(selector).fadeIn(speed,callback) -->
+
+
+    <button class="btn btn-primary p-5 mt-2" id="fadeInBtn">Click to fade</button>
+    <div id="fadeBox" style="display: none; width: 20%; background: #dfdfdf; padding: 20px; margin-top: 10px;">Hello , I fade in!</div>
+
+    <!-- 2.fadeOut()
+    Fades out a visible element by decresing its opacity 1 to 0 ,then hides it. -->
+
+    <button class="btn btn-danger p-5 mt-2" id="fadeOutBtn">Fade Out</button>
+    <div id="fadeBox1" style="background-color: aquamarine; padding: 30px; margin-top: 40px; " >Good bye,I fade out!</div>
+
+
+    <!-- 3.fadeToggle():
+    The jquery fadeToggle() method toggles btw the fadeIn() and fadeOut() methods.
+
+    If the elements are faded out, fadeToggle() will fade them in.
+    If the elements are faded in , fadeToggle() will fade them out.
+
+    syntax:
+    $(selector).fadeToggle(speed,callback); -->
+
+    <p>Demostrate fadeToogle() with different speed parameters</p>
+
+    <button class="btn btn-danger">Click to fade in/out boxes</button>
+    <div id="div1" style="width: 80px;height: 80px;background-color: rebeccapurple;"></div>
+    <div id="div2" style="width: 80px;height: 80px;background-color: aqua;"></div>
+    <div id="div3" style="width: 80px;height: 80px;background-color: blue;"></div>
+
+    <!-- 4.jquery fadeTo() method.
+    The jquery fadeTo() method allows fading to a given opacity (value btw 0 and 1.)
+    syntax:
+    $(selector).fadeTo(speed,opacity,callback); -->
+</body>
+</html>

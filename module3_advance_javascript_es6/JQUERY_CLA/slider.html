@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Slider</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+             <!-- bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/gray.css" /></head>
+
+    <!-- jquery Cdn -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <!-- call jquery cycle plugins for slider -->
+    <script src="js/jquery.cycle.all.js"></script>
+    <script type="text/javascript">
+        // $(document).ready(function(){ 
+        //     $('#slider').cycle('Zoom,shuffle,turnLeft,turnRight');
+        // });-- we can use this method also but we have one more method to clear understanding.
+
+
+        $(document).ready(function(){
+            $('#slider').cycle({
+                fx:'curtainX',//,zoom,shuffle,turnLeft,turnRight
+                timeout:2000,  //automatic transition time
+                random:1,   
+                speed:400,
+                
+            });
+        });
+// fade
+// zoom
+// shuffle
+// scrollLeft, scrollRight, scrollUp, scrollDown
+// turnLeft, turnRight
+// blindX, blindY
+// slideX, slideY
+// cover, uncover
+// curtainX, curtainY
+    </script>
+</head> 
+<body>
+    <section id="slider">
+        <img src="Images/image1.png" alt="slider" width="100%" height="450px"/>
+        <img src="Images/image2.jpg" alt="slider" width="100%" height="450px"/>
+        <img src="Images/image3.jpeg" alt="slider" width="100%" height="450px"/>
+        <img src="Images/image4.jpg" alt="slider" width="100%" height="450px"/>
+
+    </section>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Effects-sliding</title>
+          <!-- bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/gray.css" /></head>
+
+    <!-- jquery Cdn -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#flip").click(function(){
+                $("#panel").slideDown("2000")
+            });
+        });
+
+        $(document).ready(function(){
+            $("#amazon").click(function(){
+                 $("#basics").slideUp("slow");
+        });
+        });
+
+        $(document).ready(function(){
+            $("#charan").click(function(){
+                $("#kumar").slideToggle("slow");
+            });
+        });
+           
+    </script>
+    <style>
+        div{
+            width: 50%;
+            height: auto;
+            text-align: center;
+            margin-top: 10px;
+            margin-left: 25%;
+        }
+        #panel, #flip {
+            padding: 5px;
+            text-align: center;
+            background-color: aqua;
+            border: solid 1px #c3c3c3;
+        }
+        #panel {
+            padding: 50px;
+            display: none;
+
+        }
+
+        #amazon, #basics {
+            padding: 5px;
+            text-align: center;
+            background-color: #e4e4e4;
+            border: solid 1px #c3c3c3;
+        }
+        #basics {
+            padding: 5px;
+        }
+
+        #charan, #kumar {
+            padding: 5px;
+            text-align: center;
+            background-color: blanchedalmond;
+            border: solid 1px #c3c3c3;
+        }
+        #panel{
+            padding: 50px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- jquery Sliding methods
+
+    with jquery you can create a sliding effects on elements
+
+    jquery has the following slide methods
+
+    1.slideDown()
+    2.slideUp()
+    3.slideToggle() -->
+
+    <!-- jquery slideDown() method 
+    Syntax:
+    $(selector).slideDown(speed,callback); -->
+
+    <div id="flip">Click to slide down panel</div>
+    <div id="panel">Hello charan ! this show the output of slide dowm panel</div>
+
+ <!--   jquery slideUp() method 
+    The jquery slideUp() method is used to slideup an element
+    syntax:
+    $(selector).slideUp(speed,callback); -->
+
+    <div id="amazon">Click to slide Up panel</div>
+    <div id="basics">Hello charan ! this show the output of slide up panel</div>
+
+
+    <!-- jquery slideToggle() method 
+    This method toggles btw the slideDown() and slideUp() methods.
+
+    syntax:
+    $(selector).slideToggle(speed,callback); -->
+
+    <div id="charan">Click to slide the panel dowm or up</div>
+    <div id="kumar">Hello ! This output will be slided</div>
+
+</body>
+</html>
