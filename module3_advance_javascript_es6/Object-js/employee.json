@@ -1,0 +1,63 @@
+{
+    "employee" : 
+    [
+        {
+            "id" : 1,
+            "name" : "charan",
+            "age" :24,
+            "designation" : "Software Engineer",
+            "salary" : 50000
+        },
+        {
+            "id" : 2,
+            "name" : "sai",
+            "age" : 25,
+            "designation" : "Software Engineer",
+            "salary" : 60000
+        },
+        {
+            "id" : 3,
+            "name" : "kiran",
+            "age" : 26,
+            "designation" : "Senior Software Engineer",
+            "salary" : 70000
+        },
+        {
+            "id" : 4,
+            "name" : "raju",
+            "age" : 27,
+            "designation" : "Project Manager",
+            "salary" : 80000
+        }
+    ],
+    "company" :
+    [
+        {
+            "name" : "Tech Solutions",
+            "location" : "Hyderabad",
+            "established" : 2010,
+            "employees" : 100
+        },
+        {
+            "name" : "Innovatech",
+            "location" : "Bangalore",
+            "established" : 2015,
+            "employees" : 200
+        }
+    ],
+    "projects" :
+    [
+        {
+            "projectId" : 101,
+            "projectName" : "AI Development",
+            "budget" : 1000000,
+            "duration" : "6 months"
+        },
+        {
+            "projectId" : 102,
+            "projectName" : "Web Application",
+            "budget" : 500000,
+            "duration" : "3 months"
+        }
+    ]
+}

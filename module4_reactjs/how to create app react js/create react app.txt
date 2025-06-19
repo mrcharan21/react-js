@@ -1,0 +1,115 @@
+//This is older version now that was not working
+
+1) How to create a React app using Create-React-App
+
+   a) download and install Node.js from the official website (https://nodejs.org/).
+   b) Open a terminal or command prompt.
+   c) check node version node- v
+   d) check npm or npx version npm -v or npx -v
+   e) Install Create-React-App globally by running the following command:
+        create react-app my-appname
+        Note: appname should be in lowercase and no space
+    e) Navigate to the project directory:
+        cd my-appname
+    f) Start the development server:
+        npm start
+    g) Open your web browser and go to http://localhost:3000 to see your React app running.
+
+    Note: In this way app performed slow and installed slow
+
+    This is used for react 15 or 16 version
+
+
+//The current we version we are using 
+
+2) how to create app via npx using Create-React-App
+
+    a) download node js
+    b) check node version node -v
+    c) check npm or npx version npm -v or npx -v
+    d) create react app ...
+               npx create-react-app appname
+               Note: appname should always in small case 
+         e) cd appname
+         f) how to start a server of react js 
+               npm start 
+               http://localhost:3000    
+
+           Note : In this way app performed slow and installed slow
+
+           Note : all components should be saved via .js or .jsx 
+
+
+
+
+3) How to create a React app using Vite
+
+    what is vite?
+    vite is a package i.e used to create a react js app and its create and load 10x fast compare with create-react-app
+    
+    Note:vite is even used to create app with javascript another libraries and framework.
+
+    ex: vuejs | next js | react js | angular
+
+    a) Download and install Node.js from the official website (https://nodejs.org/).
+    b) Open a terminal or command prompt.
+    c) Check Node version: node -v
+    d) Check npm or npx version: npm -v or npx -v
+    e) Create a new React app using Vite by running:
+
+        a) npm create vite@latest appname -- --template react
+
+        or using yarn:
+
+          yarn create vite appname --template react
+
+        Note: Replace "appname" with your desired project name (lowercase, no spaces).
+        b) select framework/libraries => react js
+        c) select varient / language => javascript
+        d) Navigate to the project directory:
+          cd appname
+        e) Install dependencies:
+          npm install
+        f) Start the development server:
+          npm run dev
+    g) Open your web browser and go to http://localhost:5173 to see your React app running.
+
+    Note: Vite provides faster development and build times compared to Create-React-App.
+    
+
+
+Directory of react js :
+a) .git :command upload git folder create
+b) node_modules: is an imp folders i.e  used to install  all the libraries | modules | packages in the folder.
+
+c) src : src is our main application folder where all React components, CSS, and main logic files are stored.
+
+d) public : public is used to create our main HTML file (index.html) and to store static assets like images, favicon, and manifest files. The files in the public folder are not processed by Webpack, so you can reference them directly in your HTML.Render inside our src file.
+
+e) .gitignore : This file specifies which files and folders should be ignored by Git version control, such as node_modules and build directories.
+
+f) package.json :All dependencies is installed here react js version, This file contains metadata about the project, including dependencies, scripts, and project configuration.
+
+g) README.md : A markdown file that provides information and instructions about the project.
+
+h) package-lock.json :This is a dublicate of package.json, This file locks the versions of installed dependencies to ensure consistent installs across environments.
+
+How to check version of react js :
+
+a) go in package.json
+    {
+        "react": "^19.1.0",
+    }
+b) using command line
+
+    npm view react version
+
+How to change a defult PORT of react js ...
+
+    http://localhost:3000/
+
+    a) create a new file i.e .env in react app
+
+        PORT=8000
+     
+     http://localhost:8000/

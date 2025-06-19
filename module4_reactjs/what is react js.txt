@@ -1,0 +1,81 @@
+what is react js?
+
+react js is a library of javascript
+react js is most popular library of javascript that can be used to create UI of single page application(SPA);
+
+react js create a single page application
+
+react js is fast load data on browsers.
+
+react js is fast compare to angular 
+
+react js used to load data via virtual DOM
+
+react js is a library i.e used life cycle to load data 
+
+angular is framework of javascript and it is used a model(MVVM)(Model view view model architecture or model).
+
+react js used components
+react js components are resuables
+
+react js create components with .js and .jsx
+
+react js provides .jsx and jsx is used to load html
+data inside of react js in form of .jsx
+
+jsx stands for javascript XML(xtensible markup language) load dynamic content.
+
+react js used fragments <> </>
+react js fragments are used to access multiple html elements
+
+example: 
+        <>
+        <h1>Hi</h1>
+        <p>Hello</p>
+        <strong>My name is charan</strong>
+        </>
+
+        or
+
+        <React.Fragment>
+        <h1>hi</h1>
+        <p>Hello</p>
+        <strong>My name is charan</strong>
+        </React.Fragment>
+
+        or
+
+        <div>
+        <h1>hi</h1>
+        <p>Hello</p>
+        <strong>My name is charan</strong>
+        </div>
+
+
+React js is used to load dynamic content via vertical DOM
+
+React js used a life cycle
+    1) initialisation
+    2) mounting
+    3) updating
+    $) unmounting
+
+
+React js adavantage
+
+a) re-usable components
+b) SEO(search engine optimization) friendly provides website
+c) provides a good structure
+d) fast laod data 
+e) create a SPA (single page application)
+f) provides some external packages i.e
+
+    Routing | hooks | props | state | redux
+
+g) react js is open source cross platform
+h) react js is language independent
+example: java, php, laravel, asp.net, node js
+g) react js is a product of facebook
+example: snapchat, facebook, linkedin, gmail, blinkit, netflix
+
+Note : 10X time fast data load

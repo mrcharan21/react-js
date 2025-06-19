@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>What is a String in JavaScript?</title>
+    <script src="string_function.js"></script>
+</head>
+<body>
+    <h1>What is a String in JavaScript?</h1>
+    <p>
+        In JavaScript, a <strong>string</strong> is a sequence of characters used to represent text. Strings are enclosed in single quotes (<code>'</code>), double quotes (<code>"</code>), or backticks (<code>`</code>).
+    </p>
+    <h2>Types of Strings</h2>
+    <ul>
+        <li><strong>Single-quoted strings:</strong> Enclosed in single quotes.</li>
+        <li><strong>Double-quoted strings:</strong> Enclosed in double quotes.</li>
+        <li><strong>Template literals:</strong> Enclosed in backticks, allowing for multi-line strings and string interpolation.</li>
+    </ul>
+    <h2>Creating Strings</h2>
+    <p>
+        You can create strings in JavaScript using single quotes, double quotes, or backticks. Here are some examples:
+    </p>
+    <ul>
+        <li>Single-quoted: <code>'Hello, world!'</code></li>
+        <li>Double-quoted: <code>"Hello, world!"</code></li>
+        <li>Template literal: <code>`Hello, world!`</code></li>
+    </ul>
+    <p>
+        Template literals also allow for embedding expressions using the <code>${expression}</code> syntax, which is useful for creating dynamic strings.   
+    </p>
+
+    <h2>Examples:</h2>
+    <pre>
+        <code>
+let greeting = "Hello, world!";
+let name = 'Alice';
+let message = `Welcome, ${name}!`;
+        </code>
+    </pre>
+    <h2>String Properties and Methods</h2>
+    <ul>
+        <li><code>length</code> - Returns the number of characters in the string.</li>
+        <li><code>toUpperCase()</code> - Converts the string to uppercase.</li>
+        <li><code>toLowerCase()</code> - Converts the string to lowercase.</li>
+        <li><code>includes()</code> - Checks if a substring exists in the string.</li>
+        <li><code>slice()</code> - Extracts a part of the string.</li>
+    </ul>
+    <h2>Example of String Methods:</h2>
+    <pre>
+        <code>
+let text = "JavaScript is fun!";
+console.log(text.length); // Outputs: 20    
+console.log(text.toUpperCase()); // Outputs: JAVASCRIPT IS FUN!
+console.log(text.toLowerCase()); // Outputs: javascript is fun!
+console.log(text.includes("fun")); // Outputs: true
+console.log(text.slice(0, 10)); // Outputs: JavaScript
+        </code>
+    </pre>
+    <h2>Conclusion</h2>
+    <p>
+        Strings are fundamental in JavaScript for handling text data. Understanding how to create and manipulate strings is essential for effective programming in JavaScript.
+    </p>
+    <h2>Further Reading</h2>
+    <p>
+        For more information on strings in JavaScript, you can refer to the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" target="_blank">MDN Web Docs on String</a>.
+    </p>
+    <h2>Quiz</h2>
+    <p>
+        1. What is a string in JavaScript?
+        <br>
+        2. How do you create a template literal?
+        <br>
+        3. What method would you use to convert a string to uppercase?
+        <br>
+        4. How can you check if a string contains a specific substring?
+        <br>
+
+        5. What is the purpose of the <code>length</code> property in a string?
+    </p>
+    <p>
+        Answers:
+        <br>
+        1. A string is a sequence of characters used to represent text.
+        <br>
+        2. A template literal is created using backticks (<code>`</code>).
+        <br>
+        3. You would use the <code>toUpperCase()</code> method.
+        <br>
+        4. You can use the <code>includes()</code> method.
+        <br>
+        5. The <code>length</code> property returns the number of characters in the string.
+</body>
+</html>

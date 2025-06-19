@@ -1,0 +1,59 @@
+What is json?
+JSON stands for JavaScript Object Notation. It is a lightweight data interchange format that is easy for humans to read and write, and easy for machines to parse and generate. JSON is primarily used to transmit data between a server and a web application as an alternative to XML.
+JSON is language-independent, but it uses conventions that are familiar to programmers of the C family of languages, which includes C, C++, C#, Java, JavaScript, Perl, Python, and many others. This makes JSON an ideal data format for data interchange in web applications.
+JSON is often used in AJAX requests to send and receive data from a server. It is also commonly used in APIs to provide a structured way to exchange data between different systems.
+JSON data is represented as key-value pairs, similar to how objects are defined in JavaScript. It can represent complex data structures, including arrays and nested objects.
+
+JSON syntax is simple and consists of the following basic elements:
+- **Objects**: An unordered collection of key-value pairs enclosed in curly braces `{}`. Each key is a string, followed by a colon `:`, and then the value. Multiple key-value pairs are separated by commas.
+  ```json
+  {
+    "name": "John",
+    "age": 30,
+    "city": "New York"
+  }
+  ```
+- **Arrays**: An ordered collection of values enclosed in square brackets `[]`. Values can be of any type, including objects, strings, numbers, and other arrays. Values are separated by commas.
+  ```json
+  [
+    "apple",
+    "banana",
+    "cherry"
+  ]
+  ```
+
+- **Values**: Can be strings (enclosed in double quotes), numbers, objects, arrays, booleans (`true` or `false`), or `null`.
+  ```json
+  {
+    "isActive": true,
+    "balance": 250.75,
+    "address": null
+  }
+  ```
+- **Strings**: Must be enclosed in double quotes and can contain Unicode characters, escape sequences, and special characters.
+  ```json
+  {
+    "greeting": "Hello, world!"
+  }
+  ```
+- **Numbers**: Can be integers or floating-point numbers, and do not require quotes.
+  ```json
+  {
+    "age": 25,
+    "height": 5.9
+  }
+  ```
+- **Booleans**: Represented as `true` or `false` without quotes.
+  ```json
+  {
+    "isStudent": false
+  }
+  ```
+- **Null**: Represents an empty value and is written as `null` without quotes.
+  ```json
+  {
+    "middleName": null
+  }
+  ```
+JSON is widely used in web development for its simplicity and ease of use. It is supported by most programming languages, making it a versatile choice for data interchange. JSON files typically have a `.json` file extension and can be easily read and written using various libraries and tools available in different programming languages.
+
