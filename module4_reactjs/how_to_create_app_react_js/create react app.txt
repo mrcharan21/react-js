@@ -113,3 +113,71 @@ How to change a defult PORT of react js ...
         PORT=8000
      
      http://localhost:8000/
+
+
+
+structure :
+
+public/index.html
+    ↓
+  <div id="root"></div>
+    ↓
+src/index.js
+    ↓
+Renders <App />
+    ↓
+src/App.js
+    ↓
+Shows the actual content (JSX)
+
+
+| File         | Role                                                      |
+| ------------ | --------------------------------------------------------- |
+| `index.html` | Like a blank room with an empty stage (`<div id="root">`) |
+| `index.js`   | Brings React into the room and mounts the app             |
+| `App.js`     | The main performance (what’s shown on stage)              |
+
+
+
+
+
+1) When Creating a New React App — Where Do You Write Code?
+
+Folder	                        Purpose
+public/     	Holds static files (like index.html, images, icons)
+src/	        Where you write all your React code (.js, .jsx)
+
+2) So, where do we create our files?
+a) You must create your JavaScript (React) files inside src/
+Because:
+
+src/ is the main working folder in React.
+
+All components (.js, .jsx) go inside src/
+
+Only public/index.html is used from the public/ folder — it's the root container
+
+3) Typical First File Creation Flow:
+React setup gives you:
+
+public/index.html (you don’t edit this much)
+
+src/index.js (React starts from here)
+
+src/App.js (main component by default)
+
+When creating new components, do it like this:
+
+src/Header.js
+
+src/Footer.js
+
+src/Profile.js
+
+Then import and use them inside index.js or App.js.
+
+🔥 Rule to Remember:
+Only create .js or .jsx files inside src/ — that's where all your React logic lives.
+
+You almost never need to create new files in public/ — unless you're adding:
+Custom favicon,Static image, External scripts or fonts in index.html
