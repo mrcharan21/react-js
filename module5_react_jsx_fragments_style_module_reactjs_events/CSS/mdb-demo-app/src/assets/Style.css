@@ -1,0 +1,9 @@
+.navbar-link{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.navbar-link a{
+    color: azure;
+    
+}
