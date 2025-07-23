@@ -1,0 +1,76 @@
+{
+    "about-us":[
+        {
+            "id":1,
+            "photo": "https://th.bing.com/th/id/OIP.0ooqvZYhnKuye7MJqP1JAgHaHC?w=184&h=180&c=7&r=0&o=7&pid=1.7&rm=3",
+            "name" : "charan",
+            "role" : "Developer",
+            "bio" : "Charan is a visionary leader with over 2 years of experience in the tech industry.",
+            "socials": {
+                "linkedin" : "https://www.linkedin.com/in/charan",
+                "twitter" : "https://www.twitter.com/charan",
+                "github" : "https://github.com"
+            }
+
+        }
+    ],
+      "carrer":[
+        {
+            "id":1,
+            "photo": "https://th.bing.com/th/id/OIP.0ooqvZYhnKuye7MJqP1JAgHaHC?w=184&h=180&c=7&r=0&o=7&pid=1.7&rm=3",
+            "name" : "charan",
+            "role" : "Developer",
+            "bio" : "Charan is a visionary leader with over 2 years of experience in the tech industry.",
+            "socials": {
+                "linkedin" : "https://www.linkedin.com/in/charan",
+                "twitter" : "https://www.twitter.com/charan",
+                "github" : "https://github.com"
+            }
+
+        }
+    ],
+    "contact-us":[
+        {
+            "id":1,
+            "photo": "https://th.bing.com/th/id/OIP.0ooqvZYhnKuye7MJqP1JAgHaHC?w=184&h=180&c=7&r=0&o=7&pid=1.7&rm=3",
+            "name" : "charan",
+            "role" : "Developer",
+            "bio" : "Charan is a visionary leader with over 2 years of experience in the tech industry.",
+            "socials": {
+                "linkedin" : "https://www.linkedin.com/in/charan",
+                "twitter" : "https://www.twitter.com/charan",
+                "github" : "https://github.com"
+            }
+
+        }
+    ],
+    "profile":[
+        {
+            "id":1,
+            "photo": "https://th.bing.com/th/id/OIP.0ooqvZYhnKuye7MJqP1JAgHaHC?w=184&h=180&c=7&r=0&o=7&pid=1.7&rm=3",
+            "name" : "charan",
+            "role" : "Developer",
+            "bio" : "Charan is a visionary leader with over 2 years of experience in the tech industry.",
+            "socials": {
+                "linkedin" : "https://www.linkedin.com/in/charan",
+                "twitter" : "https://www.twitter.com/charan",
+                "github" : "https://github.com"
+            }
+
+        }
+    ],"placement":[
+        {
+            "id":1,
+            "photo": "https://th.bing.com/th/id/OIP.0ooqvZYhnKuye7MJqP1JAgHaHC?w=184&h=180&c=7&r=0&o=7&pid=1.7&rm=3",
+            "name" : "charan",
+            "role" : "Developer",
+            "bio" : "Charan is a visionary leader with over 2 years of experience in the tech industry.",
+            "socials": {
+                "linkedin" : "https://www.linkedin.com/in/charan",
+                "twitter" : "https://www.twitter.com/charan",
+                "github" : "https://github.com"
+            }
+
+        }
+    ]
+}
