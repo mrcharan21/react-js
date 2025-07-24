@@ -38,25 +38,25 @@ createRoot(document.getElementById('root')).render(
 
         
           {/*About */}
-          <Route path='/User/Pages/About.jsx' element={<About />} />
+          <Route path='/User/Pages/About' element={<About />} />
 
           {/*Centers */}
-          <Route path='/User/Pages/Centers.jsx' element={<Centers />} />
+          <Route path='/User/Pages/Centers' element={<Centers />} />
 
           {/*Franchies */}
-          <Route path='/User/Pages/Franchies.jsx' element={<Franchies />} />
+          <Route path='/User/Pages/Franchies' element={<Franchies />} />
 
           {/*Courses */}
-          <Route path='/User/Pages/Courses.jsx' element={<Courses />} />
+          <Route path='/User/Pages/Courses' element={<Courses />} />
 
           {/*Placements */}
-          <Route path='/User/Pages/Placements.jsx' element={<Placements />} />
+          <Route path='/User/Pages/Placements' element={<Placements />} />
 
           {/*Contactus */}
-          <Route path='/User/Pages/Contactus.jsx' element={<Contactus />} />
+          <Route path='/User/Pages/Contactus' element={<Contactus />} />
 
           {/*Blogs */}
-          <Route path='/User/Pages/Blogs.jsx' element={<Blogs />} />
+          <Route path='/User/Pages/Blogs' element={<Blogs />} />
 
 
 

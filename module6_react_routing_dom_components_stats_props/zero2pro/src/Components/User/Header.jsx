@@ -19,25 +19,25 @@ export default function Header() {
                 <Link className='nav-link text-white' to="/">Home</Link>
               </li>
               <li>
-                <Link className='nav-link text-white' to="../User/Pages/About.jsx">About</Link>
+                <Link className='nav-link text-white' to="../User/Pages/About">About</Link>
               </li>
               <li>
-                <Link className='nav-link text-white' to="../User/Pages/Centers.jsx">Centers</Link>
+                <Link className='nav-link text-white' to="../User/Pages/Centers">Centers</Link>
               </li>
               <li>
-                <Link className='nav-link text-white' to="../User/Pages/Franchies.jsx">Franchise</Link>
+                <Link className='nav-link text-white' to="../User/Pages/Franchies">Franchise</Link>
               </li>
               <li>
-                <Link className='nav-link text-white' to="../User/Pages/Courses.jsx">Our courses</Link>
+                <Link className='nav-link text-white' to="../User/Pages/Courses">Our courses</Link>
               </li>
               <li>
-                <Link className='nav-link text-white' to="../User/Pages/Placements.jsx">Placements</Link>
+                <Link className='nav-link text-white' to="../User/Pages/Placements">Placements</Link>
               </li>
               <li>
-                <Link className='nav-link text-white' to="../User/Pages/Blogs.jsx">Blogs</Link>
+                <Link className='nav-link text-white' to="../User/Pages/Blogs">Blogs</Link>
               </li>
               <li>
-                <Link className='nav-link text-white' to="../User/Pages/ContactUs.jsx">Contact Us</Link>
+                <Link className='nav-link text-white' to="../User/Pages/ContactUs">Contact Us</Link>
               </li>
             </ul>
           </MDBNavbar>
