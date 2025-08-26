@@ -1,0 +1,46 @@
+/* Container Styling */
+.feedback-container {
+  background: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+  padding: 30px;
+}
+
+/* Heading */
+.feedback-container h1 {
+  text-align: center;
+  font-weight: bold;
+  color: #343a40;
+  margin-bottom: 20px;
+}
+
+/* Form Fields */
+.feedback-container .form-control {
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.feedback-container .form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0,123,255,0.2);
+}
+
+/* Error Messages */
+.feedback-container p {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Submit Button */
+.feedback-container .btn {
+  width: 100%;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+}
+
+.feedback-container .btn:hover {
+  background: #0056b3 !important;
+}
