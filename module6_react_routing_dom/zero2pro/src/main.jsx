@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import '../src/assets/admincss/admin.css';
 import '../src/assets/usercss/user.css';
 
+
 {/*Admin */}
 import AdminLayout from './AdminLayout.jsx';
 import AdminLogin from './Components/Admin/AdminLogin.jsx';
@@ -34,7 +35,7 @@ createRoot(document.getElementById('root')).render(
       <Router>
         <Routes>
           {/*User Panel*/}
-          <Route path='/' element={<UserLayout />} />
+          <Route path='/zero2proApp' element={<UserLayout />} />
 
         
           {/*About */}

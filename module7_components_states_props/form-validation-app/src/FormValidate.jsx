@@ -15,7 +15,11 @@ export default function FormValidate() {
     // Form validation errors
     const[errors, setErrors] = useState({});
     // Show password state
-    const [showpassword, setShowpassword] = useState(true);
+const [showPassword, setShowPassword] = useState(false);
+const [showConfirmPassword, setShowConfirmPassword] = useState(false);
+
+        const togglePassword = () => setShowPassword((prev) => !prev);
+        const toggleConfirmPassword = () => setShowConfirmPassword((prev) => !prev);
 
     // Validate form fields
     const validate=()=>{
@@ -74,6 +78,7 @@ export default function FormValidate() {
                 confirmButtonText: 'OK'
             });
         }
+        console.log(data);
         // This is for resetting the form
         setData({
             fName: "",
@@ -90,49 +95,69 @@ export default function FormValidate() {
 
   return (
     <>
-        <div className='form-container p-5 bg-transparent rounded-4 d-flex flex-column justify-content-center border border-white mx-auto my-5"
-        style={{ width: "500px" }}'>
+        <div className='form-container p-5 bg-transparent rounded-4 d-flex flex-column justify-content-center border border-white mx-auto my-5'
+        style={{ width: "500px" }}>
             <form className="d-flex flex-column gap-5" onSubmit={handleSubmit}>
-                <h3 className="text-center text-white">Form Handeling App</h3>
+                <h2 className="text-center"><b>Form Handeling App</b></h2>
                 <div className="form-group">
-                    <input type="text"name='fName' value={data.fName}
+                    <i className="bi bi-person-fill"></i>
+                    <input type="text"name='fName' value={data.fName} className='form-control ps-5'
                     onChange={handleChange} placeholder='Enter your First Name'  />
                 </div>
                 {errors.fName && (
             <span className="text-danger fw-bold">{errors.fName}</span>
           )}
-                <div>
-                    <input type="text" name="lName" value={data.lName} onChange={handleChange} placeholder='Enter your last Name ' />
+                <div className="form-group">
+                    <i className="bi bi-person-fill"></i>
+                    <input type="text" name="lName" value={data.lName} className='form-control ps-5' onChange={handleChange} placeholder='Enter your last Name ' />
                 </div>
                 {errors.lName && (
             <span className="text-danger fw-bold">{errors.lName}</span>
           )}
-                <div>
-                    <input type="Email" name='Email' value={data.Email} onChange={handleChange} placeholder='Enter your Email' />
+                <div className="form-group">
+                    <i className="bi bi-envelope-fill"></i>
+                    <input type="Email" name='Email' value={data.Email} className='form-control ps-5' onChange={handleChange} placeholder='Enter your Email' />
                 </div>
                 {errors.Email && (
             <span className="text-danger fw-bold">{errors.Email}</span>
           )}
-                <div>
-                    <input type="text" name='PhoneNumber' value={data.PhoneNumber} onChange={handleChange} placeholder='Enter your phone Number'  />
+                <div className="form-group">
+                    <i className="bi bi-telephone-fill"></i>
+                    <input type="text" name='PhoneNumber' value={data.PhoneNumber} className='form-control ps-5' onChange={handleChange} placeholder='Enter your phone Number'  />
                 </div>
                 {errors.PhoneNumber && (
             <span className="text-danger fw-bold">{errors.PhoneNumber}</span>
           )}
-                <div>
-                    <input type={showpassword ? "text" : "password"} name='Password' value={data.Password} onChange={handleChange}  placeholder='password' />
+            <div className="form-group">
+                <i className="bi bi-lock-fill"></i>
+                <input type={showPassword ? "text" : "password"} name='Password' value={data.Password}
+                    className='form-control ps-5' onChange={handleChange} placeholder='Password'/>
+                <span className='password-toggle' onClick={togglePassword}>
+                    {showPassword ? "🙈" : "👁️"}
+                </span>
                 </div>
-            
                 {errors.Password && (
             <span className="text-danger fw-bold">{errors.Password}</span>
-            
           )}
-                <div>
-                    <input type={showpassword ? "text" : "password"} name='confirmPassword' value={data.confirmPassword} onChange={handleChange} placeholder='Confirm password' />
+
+                <div className="form-group">
+                <i className="bi bi-lock-fill"></i>
+                <input
+                    type={showConfirmPassword ? "text" : "password"}
+                    name='confirmPassword'
+                    value={data.confirmPassword}
+                    className='form-control ps-5'
+                    onChange={handleChange}
+                    placeholder='Confirm password'
+                />
+                <span className='password-toggle' onClick={toggleConfirmPassword} style={{cursor: 'pointer'}}>
+                    {showConfirmPassword ? "🙈" : "👁️"}
+                </span>
                 </div>
                 {errors.confirmPassword && (
             <span className="text-danger fw-bold">{errors.confirmPassword}</span>
           )}
+
 
                 <input type="submit" value='submit' className='btn btn-danger p-2' />
             </form>

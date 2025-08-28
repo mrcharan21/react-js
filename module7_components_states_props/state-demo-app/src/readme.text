@@ -1,0 +1,24 @@
+In React, state refers to javascript object used to record and react to user events or changes over time.
+
+
+Key Characteristics of State:
+Mutable : Unlike props, state can be changed 
+
+Private : State is local to the component where it is defined.
+
+Triggers Re-render : Updating state will re-render the component automatically.
+
+Not-Shareable: You can't directly share state between components - use props or global state managers like Redux.
+
+
+Functional component: State with "useState".
+React Hooks introduce useState for Functional components
+
+useState(0) initializes the state to 0.The components re-renders whenever count changes.
+Hooks to add local state in Function components 
+
+this.state : state object in class components
+
+setState / setX : Function to update state and trigger re-render 
+
+Re-render : Every state changes triggers re-evaluation of the component.
