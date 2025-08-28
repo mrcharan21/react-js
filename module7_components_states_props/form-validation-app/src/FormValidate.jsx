@@ -1,5 +1,7 @@
 import React,{useState} from 'react';
 import Swal from 'sweetalert2';
+import { FaEye, FaEyeSlash } from "react-icons/fa";
+
 
 
 export default function FormValidate() {
@@ -15,8 +17,8 @@ export default function FormValidate() {
     // Form validation errors
     const[errors, setErrors] = useState({});
     // Show password state
-const [showPassword, setShowPassword] = useState(false);
-const [showConfirmPassword, setShowConfirmPassword] = useState(false);
+        const [showPassword, setShowPassword] = useState(false);
+        const [showConfirmPassword, setShowConfirmPassword] = useState(false);
 
         const togglePassword = () => setShowPassword((prev) => !prev);
         const toggleConfirmPassword = () => setShowConfirmPassword((prev) => !prev);
@@ -58,9 +60,17 @@ const [showConfirmPassword, setShowConfirmPassword] = useState(false);
         return newErrors;
     }
     // Handle input changes
-    const handleChange =(e)=>{
-        setData({...data,[e.target.name]: e.target.value});
-    };
+    // const handleChange =(e)=>{
+    //     setData({...data,[e.target.name]: e.target.value});
+    // };
+
+        const handleChange = (e) => {
+        const { name, value } = e.target;
+        setData({ ...data, [name]: value });
+        setErrors({ ...errors, [name]: "" }); // Clear error for this field
+        };
+
+
     // Handle form submission
     const handleSubmit = (e)=>{
         e.preventDefault();
@@ -96,12 +106,12 @@ const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   return (
     <>
         <div className='form-container p-5 bg-transparent rounded-4 d-flex flex-column justify-content-center border border-white mx-auto my-5'
-        style={{ width: "500px" }}>
+        style={{ maxWidth: "500px", width: "100%" }}>
             <form className="d-flex flex-column gap-5" onSubmit={handleSubmit}>
-                <h2 className="text-center"><b>Form Handeling App</b></h2>
+                <h2 className="text-center fs-4 fs-md-3"><b>Form Handeling App</b></h2>
                 <div className="form-group">
                     <i className="bi bi-person-fill"></i>
-                    <input type="text"name='fName' value={data.fName} className='form-control ps-5'
+                    <input type="text"name='fName' value={data.fName} className='form-control ps-5 '
                     onChange={handleChange} placeholder='Enter your First Name'  />
                 </div>
                 {errors.fName && (
@@ -123,7 +133,7 @@ const [showConfirmPassword, setShowConfirmPassword] = useState(false);
           )}
                 <div className="form-group">
                     <i className="bi bi-telephone-fill"></i>
-                    <input type="text" name='PhoneNumber' value={data.PhoneNumber} className='form-control ps-5' onChange={handleChange} placeholder='Enter your phone Number'  />
+                    <input type="tel" name='PhoneNumber' value={data.PhoneNumber} className='form-control ps-5' onChange={handleChange} placeholder='Enter your phone Number'  />
                 </div>
                 {errors.PhoneNumber && (
             <span className="text-danger fw-bold">{errors.PhoneNumber}</span>
@@ -133,7 +143,7 @@ const [showConfirmPassword, setShowConfirmPassword] = useState(false);
                 <input type={showPassword ? "text" : "password"} name='Password' value={data.Password}
                     className='form-control ps-5' onChange={handleChange} placeholder='Password'/>
                 <span className='password-toggle' onClick={togglePassword}>
-                    {showPassword ? "🙈" : "👁️"}
+                    {showPassword ? <FaEyeSlash /> : <FaEye />}
                 </span>
                 </div>
                 {errors.Password && (
@@ -151,7 +161,7 @@ const [showConfirmPassword, setShowConfirmPassword] = useState(false);
                     placeholder='Confirm password'
                 />
                 <span className='password-toggle' onClick={toggleConfirmPassword} style={{cursor: 'pointer'}}>
-                    {showConfirmPassword ? "🙈" : "👁️"}
+                    {showConfirmPassword ? <FaEyeSlash /> : <FaEye />}
                 </span>
                 </div>
                 {errors.confirmPassword && (
@@ -159,7 +169,7 @@ const [showConfirmPassword, setShowConfirmPassword] = useState(false);
           )}
 
 
-                <input type="submit" value='submit' className='btn btn-danger p-2' />
+                <button type="submit" className='btn btn-danger p-2 w-100'>Submit</button>
             </form>
         </div>
     </>
