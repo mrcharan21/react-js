@@ -63,11 +63,13 @@ export default function FormValidate() {
     // const handleChange =(e)=>{
     //     setData({...data,[e.target.name]: e.target.value});
     // };
+      
 
-        const handleChange = (e) => {
-        const { name, value } = e.target;
-        setData({ ...data, [name]: value });
-        setErrors({ ...errors, [name]: "" }); // Clear error for this field
+        // Handle input changes
+        const handleChange = (e) => {           // this function handles input changes
+        const { name, value } = e.target;        // destructure name and value from the target
+        setData({ ...data, [name]: value });     // update the form data state
+        setErrors({ ...errors, [name]: "" });    // Clear error for this field
         };
 
 

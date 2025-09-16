@@ -1,0 +1,144 @@
+{
+  "tasks": [
+    {
+      "id": "e6e8",
+      "addTask": "ad",
+      "assignTo": "1",
+      "addDate": "2222-02-12",
+      "taskDetails": "dsa"
+    },
+    {
+      "id": "e8b0",
+      "addTask": "API",
+      "assignTo": "1",
+      "addDate": "2025-03-02",
+      "taskDetails": "Completed "
+    },
+    {
+      "id": "a0f2",
+      "addTask": "API",
+      "assignTo": "1",
+      "addDate": "2025-03-02",
+      "taskDetails": "Completed "
+    },
+    {
+      "id": "e6f1",
+      "addTask": "API",
+      "assignTo": "1",
+      "addDate": "2025-03-02",
+      "taskDetails": "Completed "
+    },
+    {
+      "id": "7eb7",
+      "addTask": "React ",
+      "assignTo": "3",
+      "addDate": "2025-09-06",
+      "taskDetails": "Completed"
+    },
+    {
+      "id": "c0ad",
+      "addTask": "wdetr",
+      "assignTo": "1",
+      "addDate": "7547-09-08",
+      "taskDetails": "uh"
+    },
+    {
+      "id": "6c1f",
+      "addTask": "Tops",
+      "assignTo": "2",
+      "addDate": "2333-02-03",
+      "taskDetails": "adf;aslkf"
+    },
+    {
+      "id": "de90",
+      "addTask": "React js and Javascript",
+      "assignTo": "2",
+      "addDate": "2025-09-11",
+      "taskDetails": "Complete chey ra "
+    },
+    {
+      "id": "deab",
+      "addTask": "Mi",
+      "assignTo": "2",
+      "addDate": "2025-09-12",
+      "taskDetails": "Completed"
+    }
+  ],
+  "assign-to": [
+    {
+      "id": "1",
+      "name": "Rudra"
+    },
+    {
+      "id": "2",
+      "name": "Charan"
+    },
+    {
+      "id": "3",
+      "name": "Abhishek "
+    },
+    {
+      "id": "4",
+      "name": "Sanket"
+    },
+    {
+      "id": "5",
+      "name": "Sagar"
+    },
+    {
+      "id": "6",
+      "name": "Sankalp"
+    }
+  ],
+  "contact-us": [
+    {
+      "id": "5695",
+      "name": "ca",
+      "email": "ca@gmail.com",
+      "phone": "9834658723",
+      "message": "d"
+    },
+    {
+      "id": "0c37",
+      "name": "charan",
+      "email": "charanguguloth13@gmail.com",
+      "phone": "983658723",
+      "message": "hi "
+    },
+    {
+      "id": "8b71",
+      "name": "R",
+      "email": "rudrahirdekar4@gmail.com",
+      "phone": "9383737373",
+      "message": "Have you got a message Rudra Bhai \nits working if you got then replay me \nByee Byee Mr .Smartyyy"
+    },
+    {
+      "id": "a3ed",
+      "name": "Rudra",
+      "email": "rudrahirdekar4@gmail.com",
+      "phone": "93498523743",
+      "message": "Hello Rudra "
+    },
+    {
+      "id": "9d10",
+      "name": "Rudra",
+      "email": "rudrahirdekar4@gmail.com",
+      "phone": "9862345347",
+      "message": "hi"
+    },
+    {
+      "id": "9584",
+      "name": "charan ",
+      "email": "charanguguloth13@gmail.com",
+      "phone": "9439582347",
+      "message": "hello"
+    },
+    {
+      "id": "b416",
+      "name": "charan",
+      "email": "charanguguloth13@gmail.com",
+      "phone": "9384523463",
+      "message": "Good morning"
+    }
+  ]
+}
