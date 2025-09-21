@@ -42,25 +42,25 @@ export default function Header() {
                     <Link className='nav-link text-white' to="/">Home</Link>
                   </li>
                   <li>
-                    <Link className='nav-link text-white' to="../User/Pages/About">About</Link>
+                    <Link className='nav-link text-white' to="/About">About</Link>
                   </li>
                   <li>
-                    <Link className='nav-link text-white' to="../User/Pages/Centers">Centers</Link>
+                    <Link className='nav-link text-white' to="/Centers">Centers</Link>
                   </li>
                   <li>
-                    <Link className='nav-link text-white' to="../User/Pages/Franchies">Franchise</Link>
+                    <Link className='nav-link text-white' to="/Franchies">Franchise</Link>
                   </li>
                   <li>
-                    <Link className='nav-link text-white' to="../User/Pages/Courses">Our Courses</Link>
+                    <Link className='nav-link text-white' to="/Courses">Our Courses</Link>
                   </li>
                   <li>
-                    <Link className='nav-link text-white' to="../User/Pages/Placements">Placements</Link>
+                    <Link className='nav-link text-white' to="/Placements">Placements</Link>
                   </li>
                   <li>
-                    <Link className='nav-link text-white' to="../User/Pages/Blogs">Blogs</Link>
+                    <Link className='nav-link text-white' to="/Blogs">Blogs</Link>
                   </li>
                   <li>
-                    <Link className='nav-link text-white' to="../User/Pages/ContactUs">Contact Us</Link>
+                    <Link className='nav-link text-white' to="/ContactUs">Contact Us</Link>
                   </li>
                 </ul>
               </MDBCollapse>

@@ -35,29 +35,29 @@ createRoot(document.getElementById('root')).render(
       <Router>
         <Routes>
           {/*User Panel*/}
-          <Route path='/zero2proApp' element={<UserLayout />} />
+          <Route path='/' element={<UserLayout />} />
 
         
           {/*About */}
-          <Route path='/User/Pages/About' element={<About />} />
+          <Route path='/About' element={<About />} />
 
           {/*Centers */}
-          <Route path='/User/Pages/Centers' element={<Centers />} />
+          <Route path='/Centers' element={<Centers />} />
 
           {/*Franchies */}
-          <Route path='/User/Pages/Franchies' element={<Franchies />} />
+          <Route path='/Franchies' element={<Franchies />} />
 
           {/*Courses */}
-          <Route path='/User/Pages/Courses' element={<Courses />} />
+          <Route path='/Courses' element={<Courses />} />
 
           {/*Placements */}
-          <Route path='/User/Pages/Placements' element={<Placements />} />
+          <Route path='/Placements' element={<Placements />} />
 
           {/*Contactus */}
-          <Route path='/User/Pages/Contactus' element={<Contactus />} />
+          <Route path='/Contactus' element={<Contactus />} />
 
           {/*Blogs */}
-          <Route path='/User/Pages/Blogs' element={<Blogs />} />
+          <Route path='/Blogs' element={<Blogs />} />
 
 
 
@@ -69,7 +69,7 @@ createRoot(document.getElementById('root')).render(
 
           {/*Admin panel */}
           <Route path='/admin-login' element={<AdminLogin/>} />
-          <Route path='admin-login/dashboard' element={<AdminLayout />} />
+          <Route path='/admin-login/admin' element={<AdminLayout />} />
 
           {/*Manage customers */}
           <Route path='admin-login/manage-customers' element={<ManageCustomers/>} />
@@ -88,6 +88,9 @@ createRoot(document.getElementById('root')).render(
 
           {/*Manage Reviews */}
           <Route path='admin-login/managereviews' element={<ManageReviews />} />
+
+          {/*Manage Feedback */}
+          <Route path='admin-login/manage-feedback' element={<ManageFeedback />} />
 
           {/*Manage Contact */}
           <Route path='admin-login/managecontacts' element={<ManageContact />} />
