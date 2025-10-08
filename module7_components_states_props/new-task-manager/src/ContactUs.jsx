@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import axios from "axios";
+import Navbar from "./Navbar";
 
 export default function ContactUs() {
   const url = "http://localhost:8000/contact-us";
@@ -54,6 +55,8 @@ export default function ContactUs() {
   };
 
   return (
+    <>
+    <Navbar />
     <section className="w-[400px] mt-10 mx-auto p-5 shadow-lg rounded bg-white">
       <h1 className="text-2xl font-bold text-center mb-5">Contact Us</h1>
       <form onSubmit={handleSubmit}>
@@ -105,5 +108,6 @@ export default function ContactUs() {
         </button>
       </form>
     </section>
+    </>
   );
 }
