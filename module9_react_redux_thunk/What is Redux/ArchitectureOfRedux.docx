@@ -1,0 +1,87 @@
+1. State
+
+State is an initialized data object that holds information about the app’s current status.
+
+It can be updated when user interactions or actions occur.
+
+In React, each component can have its own local state, but Redux provides a global state that can be shared across multiple components.
+
+State is used to store and manage dynamic data that changes over time.
+
+Example:
+
+const initialState = { count: 0 };
+
+✅ 2. UI (User Interface)
+
+UI stands for User Interface — it’s what the user sees and interacts with in the application.
+
+In React + Redux, the UI (React components) is connected to the Redux store to display and update data.
+
+When a user interacts with the UI (for example, submitting a form), an action is dispatched to the store to update the state.
+
+Example Flow:
+UI → Dispatch Action → Reducer → Update State → UI Rerenders
+
+✅ 3. Actions
+
+Actions are plain JavaScript objects that describe what happened in the application.
+
+Each action must have a type property that defines the action’s purpose, and it can include a payload containing additional data.
+
+Actions are dispatched from the UI and read by reducers to update the state.
+
+Actions are not functions — they are simple objects that describe an intention to change state.
+
+Example:
+
+const addTodo = {
+  type: 'ADD_TODO',
+  payload: 'Learn Redux'
+};
+
+✅ 4. Reducer
+
+A Reducer is a pure function that determines how the state should change in response to an action.
+
+It takes two arguments: the current state and an action, and returns a new state.
+
+Reducers must be pure — they don’t modify the existing state directly or perform side effects.
+
+They act as the “decision maker” for updating the store.
+
+Example:
+
+function todoReducer(state = [], action) {
+  if (action.type === 'ADD_TODO') {
+    return [...state, action.payload];
+  }
+  return state;
+}
+
+✅ 5. Store
+
+The Store is the central place where the entire state of your application is stored.
+
+It acts as the brain of Redux, managing how state updates and how components access data.
+
+The store is created using the createStore() or (modern way) configureStore() method from Redux Toolkit.
+
+It connects the actions, reducers, and the UI together.
+
+Example:
+
+import { configureStore } from '@reduxjs/toolkit';
+import todoReducer from './todoReducer';
+
+const store = configureStore({ reducer: todoReducer });
+
+
+
+🧠 Quick Summary (Ideal for Notes or Interviews)
+Concept	Description
+State -->	Holds the app’s data and can be updated when actions occur.
+UI -->	User Interface that interacts with the Redux store to show and update data.
+Action -->Plain object describing what happened; dispatched from UI.
+Reducer -->	Pure function that updates the state based on the action type.
+Store --> Central place that holds the global state and connects actions + reducers.

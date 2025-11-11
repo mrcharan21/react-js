@@ -1,0 +1,33 @@
+What is Redux ?
+1.Redux is a javascript library (not limited to react) used for state management.
+  -- It helps manage and centralize the applications state in a predicatable way.
+
+2.Redux provides a robust architecture suitable for complex applications.
+  -- It helps organize data flow in large-scale projects by followinf a predictable pattern.
+
+3.Redux is used to store and manage application data(State).
+  -- The global store keeps all the app's state in one central place.
+
+4.Redux is used to load,update and synchronize data through a predicatable state management system.
+
+5.Redux is not part of React itself, but it is commonly used with react for managing global state.
+    -- we install it using packages like redux and react-redux
+
+6.Redux provides a "store" -- a central container where all state us stored.
+
+7.Redux uses "actions" and "reducers" to define how data changes.
+        -actions describe what happened.
+        -Reducers specify how the state chnages in response to actions.
+    
+8.Redux uses "dispatch" to send actions to the store, which updates the state through reducers.
+
+9.Redux allows React components to read data from the Redux store using the useSelector hook.
+
+10. Redux supports midddleware like (redux-thunk) or (redux-saga) to handle asynchronous logic such as API calls.
+    
+Redux provides a  life cycle architectures 
+1.  state
+2. ui
+3. actions
+4. Reducer (simple generalised function)
+5. store

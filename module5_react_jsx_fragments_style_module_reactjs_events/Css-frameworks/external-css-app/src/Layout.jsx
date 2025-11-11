@@ -16,7 +16,7 @@ const Layout = () => {
   <NavBar />
   <Header />
   <Slider />
-    <Content />
+  <Content />
   <Footer />
   
 

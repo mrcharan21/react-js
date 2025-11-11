@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "id": "6c2d",
+      "name": "charan",
+      "email": "ck@gmail.com",
+      "age": "23",
+      "mobile": "98346535544"
+    },
+    {
+      "id": "aa33",
+      "name": "Nithin",
+      "email": "nithin@gmail.com",
+      "age": "22",
+      "mobile": "8348573985"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+Command for installation redux 
+
+1	npm create vite@latest my-app   -->	Create a new Vite React project
+2	npm install @reduxjs/toolkit react-redux -->	Add Redux Toolkit + React bindings
+3	npm install axios -->	For API requests
+4	npm install react-router-dom -->	For routing/navigation
+5	(Optional) UI library (@mui/material or tailwindcss)-->
+	For better UI design

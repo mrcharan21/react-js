@@ -18,14 +18,17 @@ export default function Counter() {
  3rd manam function lopala oka variable teskovali adhi "const" ee const lo manam 
     1st em ithe app chesthamo example : count, text , ala emina undani 
     adhi teskovali endulo 
-    and main thing manam dani kotha dynamic value update cheskovadaniki "setCount" use cheyali 
-    and array close [] cheysaka = useState( endulo manam chesthunna task update cheyali example 
+
+  count lo manam initial value petukovali example : 0 , "" , false , true , [] ila emina undochu
+    4th manam dani kotha dynamic value update cheskovadaniki "setCount" use cheyali
+    and array close [] cheysaka = useState( endulo manam chesthunna task update cheyali example  
+      0 , "" , array ledha object ledha
     id kavachu , name kavachu , images kavachu , boolean value and number ledha string ani evi endulo petukovali  ) 
     example : const [count ,setCount] = useState( )
 
-
+    5th manam function lo 
     deni taravatha return lopala 
-    Em ithe html or jsx code endulo fragments lo raskovali 
+    Em ithe html or jsx code endulo fragments lo raskovali
 
     and 
     endulo manam inline css echukovachu like style = {{ endulo css eg margin: '300px ', }}

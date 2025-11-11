@@ -1,0 +1,14 @@
+body{
+  margin: 0%;
+  padding: 0%;
+  overflow-x: hidden;
+}
+input{
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #e6e9ee;
+  font-size: 14px;
+  color: #0f172a;
+  outline: none;
+  transition: box-shadow 0.15s ease, border-color 0.15s ease;
+}
