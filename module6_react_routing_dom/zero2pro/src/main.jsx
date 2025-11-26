@@ -90,7 +90,7 @@ createRoot(document.getElementById('root')).render(
           <Route path='admin-login/managereviews' element={<ManageReviews />} />
 
           {/*Manage Feedback */}
-          <Route path='admin-login/manage-feedback' element={<ManageFeedback />} />
+          {/* <Route path='admin-login/manage-feedback' element={<ManageFeedback />} /> */}
 
           {/*Manage Contact */}
           <Route path='admin-login/managecontacts' element={<ManageContact />} />

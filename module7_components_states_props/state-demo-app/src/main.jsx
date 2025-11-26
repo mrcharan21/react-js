@@ -24,7 +24,7 @@ import Counter from './Components/Counter.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     {/* <Checkbox /> */}
-    {/* <ArrayState /> */}
+    <ArrayState />
     {/* <App /> */}
     {/* <Garage /> */}
     {/* <Counter /> 
@@ -36,7 +36,7 @@ createRoot(document.getElementById('root')).render(
      {/* <Dropdown /> */}
      {/* <RadioButton /> */}
 
-         <CountingApp />
+         {/* <CountingApp />
     <InputField />
     <Toggle /> 
     
@@ -45,6 +45,6 @@ createRoot(document.getElementById('root')).render(
     <ArrayState /> 
      <ShowHidePassword /> 
      <FormWithMultipleFields />
-     <TimerToggle />  
+     <TimerToggle />   */}
   </StrictMode>,
 )
